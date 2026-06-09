@@ -1,3 +1,4 @@
+import BreakingNews from "@/components/sheard/BreakingNews";
 import Header from "@/components/sheard/Header";
 import Navbar from "@/components/sheard/Navbar";
 import React from "react";
@@ -5,9 +6,12 @@ import React from "react";
 const MainLayout = ({ children }) => {
   return (
     <>
-      <Header></Header>
-      <Navbar></Navbar>
-      {children}
+      <div className="w-10/12 mx-auto">
+        <Header></Header>
+        <BreakingNews></BreakingNews>
+        <Navbar></Navbar>
+        {children}
+      </div>
     </>
   );
 };
